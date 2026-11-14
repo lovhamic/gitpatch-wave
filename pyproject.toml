@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gitpatch-wave"
+version = "1.0.0"
+description = "Interactive wave superposition plotter and mathematics visualization engine with a Git-inspired dark user interface."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "lovhamic" }
+]
+keywords = [
+    "wave-plotter",
+    "physics-simulation",
+    "superposition",
+    "flask",
+    "numpy",
+    "canvas",
+    "mathematics",
+    "visualization"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Visualization"
+]
+dependencies = [
+    "flask>=3.0.0",
+    "numpy>=1.24.0",
+    "gunicorn>=21.2.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "flake8>=6.0.0",
+    "black>=23.0.0",
+    "pyinstaller>=6.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/lovhamic/gitpatch-wave"
+Repository = "https://github.com/lovhamic/gitpatch-wave"
+Issues = "https://github.com/lovhamic/gitpatch-wave/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311", "py312"]

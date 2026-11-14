@@ -1,0 +1,42 @@
+name: Feature Request
+description: Propose a new feature, enhancement, or optimization for GitPatch Wave.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please use this form to suggest enhancements or new capabilities for GitPatch Wave.
+
+  - type: textarea
+    id: feature-summary
+    attributes:
+      label: Proposed Feature
+      description: Clear and concise summary of the proposed enhancement.
+      placeholder: Describe the feature you would like to see...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-or-use-case
+    attributes:
+      label: Problem Statement or Motivation
+      description: Explain why this feature is valuable and what problem or use case it addresses.
+      placeholder: Explain the motivation or context...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution or Implementation Details
+      description: How you envision this feature being implemented or exposed to users.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives-considered
+    attributes:
+      label: Alternatives Considered
+      description: Any alternative solutions or workarounds you considered.
+    validations:
+      required: false

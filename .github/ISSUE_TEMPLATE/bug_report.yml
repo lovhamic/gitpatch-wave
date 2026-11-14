@@ -1,0 +1,55 @@
+name: Bug Report
+description: Create a report to help reproduce and fix a bug in GitPatch Wave.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for submitting a bug report. Please provide clear details to help reproduce and resolve the issue.
+
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of the defect encountered.
+      placeholder: Describe what happened...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to Reproduce
+      description: Detailed sequence of actions to reproduce the bug.
+      placeholder: |
+        1. Start the server with 'python app.py'
+        2. Navigate to '/plotter'
+        3. Enter equation '...'
+        4. Observe behavior...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happened, including any console or terminal error messages.
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment Information
+      description: Operating system, Python version, browser, and package versions.
+      placeholder: "Windows 11 / Python 3.11 / Chrome 120"
+    validations:
+      required: false
